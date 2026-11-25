@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASMN – Association Sportive Marathoniens Nantais</title>
+<meta name="description" content="Association Sportive Marathoniens Nantais : club de course à pied à Nantes. Entraînements, adhésion et contact.">
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="./"><img class="logo" src="logo.jpg" width="216" height="229" alt="ASMN"></a>
+    <nav aria-label="Navigation principale">
+      <a href="#entrainements">Entraînements</a>
+      <a href="#rejoindre">Nous rejoindre</a>
+      <a href="#contact">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Association Sportive Marathoniens Nantais</h1>
+    </div>
+  </section>
+
+  <section id="entrainements">
+    <div class="wrap cols">
+      <h2>Entraînements</h2>
+      <div>
+        <h3>Lieu</h3>
+        <ul>
+          <li>Le départ des entraînements est au <a href="https://www.google.fr/maps/place/Stade+Michel+Lecointre/@47.209132,-1.53348,17z/data=!3m1!4b1!4m2!3m1!1s0x4805eeceaf5585af:0xa68c5e869c505f4b">stade Michel Lecointre</a> sur l’Île de Nantes.</li>
+          <li>Les séances spécifiques, types fractionnés, se déroulent pour la plupart au stade.</li>
+          <li>L’échauffement, les séances longues se déroulent le long de la Loire, l’Erdre ou la Sèvre Nantaise, dans des parcs (Grand Blottereau, île Pinette, île Forget)…</li>
+        </ul>
+        <h3>Horaires</h3>
+        <ul>
+          <li>Les entraînements ont lieu le mardi et le jeudi à 19h00 et le dimanche à 10h.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="rejoindre">
+    <div class="wrap cols">
+      <h2>Nous rejoindre</h2>
+      <div>
+        <p class="lead">Vous souhaitez rejoindre l’ASMN&nbsp;? Rien de plus facile&nbsp;! Il vous suffit de… Venir&nbsp;!</p>
+        <p>En effet, il vous est possible de tester avec nous quelques entraînements.</p>
+        <p>Si cela vous convient et après entretien avec l’un des coachs pour définir vos objectifs de l’année, vous pourrez adhérer au club, dans la limite des places disponibles.</p>
+
+        <h3>Deux types de licence sont proposés</h3>
+        <dl class="prices">
+          <div><dt>Licence «&nbsp;Running&nbsp;»</dt><dd><b>100&nbsp;€</b></dd></div>
+          <div><dt>Licence «&nbsp;Compétition&nbsp;»<small>Donne accès aux cross en compétition</small></dt><dd><b>125&nbsp;€</b></dd></div>
+        </dl>
+
+        <h3>Pour adhérer</h3>
+        <p>Il vous faudra nous fournir certaines pièces en main propre ou en copie par mail&nbsp;:</p>
+        <ul>
+          <li>Le formulaire d’adhésion complété.</li>
+          <li>Un certificat médical de non contre-indication de la pratique de l’athlétisme en compétition de moins de 3 mois (un test VO2MAX par un médecin du sport est recommandé) ou une copie de votre questionnaire santé FFA avec l’ensemble des réponses à «&nbsp;Non&nbsp;».</li>
+          <li>Le règlement par virement (en précisant bien vos nom et prénom) ou par chèque.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="strava">
+    <div class="wrap cols">
+      <h2>Strava</h2>
+      <div>
+        <iframe title="Dernières sorties du club sur Strava" loading="lazy" width="300" height="454" src="https://www.strava.com/clubs/212886/latest-rides/627e0888b868f67cc0dc084d96f172331c7f62e2?show_rides=true"></iframe>
+        <p><a href="https://www.strava.com/clubs/212886">Voir le club sur Strava</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facebook">
+    <div class="wrap cols">
+      <h2>Facebook</h2>
+      <div>
+        <div id="fb-widget"></div>
+        <p><a href="https://www.facebook.com/ASMN.club/">Voir la page du club sur Facebook</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap cols">
+    <h2>Nous contacter</h2>
+    <div>
+      <p>Par email&nbsp;: <a href="mailto:contact@asmn.club">contact@asmn.club</a></p>
+      <p>Par <a href="https://www.facebook.com/ASMN.club/">Facebook</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+// The Facebook widget needs its exact width at load time.
+window.addEventListener('load', function () {
+  var box = document.getElementById('fb-widget');
+  var width = Math.max(180, Math.min(500, box.clientWidth));
+  var frame = document.createElement('iframe');
+  frame.title = 'Publications Facebook du club';
+  frame.width = width;
+  frame.height = 600;
+  frame.src = 'https://www.facebook.com/plugins/page.php?href=' +
+    encodeURIComponent('https://www.facebook.com/ASMN.club/') +
+    '&tabs=timeline&width=' + width + '&height=600&small_header=true&locale=fr_FR';
+  box.appendChild(frame);
+});
+</script>
+</body>
+</html>

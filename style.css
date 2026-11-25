@@ -1,0 +1,43 @@
+:root { --red: #d0021b; --ink: #211b1b; --line: #e3dada; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: var(--ink); font: 1.0625rem/1.5 "Avenir Next", Avenir, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--red); text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 6px; }
+.logo { display: block; width: 88px; height: auto; }
+nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 28px; }
+nav a { color: var(--ink); font-weight: 600; text-decoration: none; padding: 6px 0; }
+nav a:hover { color: var(--red); text-decoration: underline; }
+
+.hero { background: var(--red); color: #fff; padding: clamp(14px, 2vw, 20px) 0; }
+h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.5rem); line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
+
+.cols { display: grid; grid-template-columns: 1fr 2fr; gap: 8px 48px; padding-block: clamp(24px, 3vw, 36px); }
+section + section:not(#entrainements) .cols { border-top: 1px solid var(--line); }
+h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.2; }
+h3 { margin: 20px 0 4px; font-size: 1.15rem; }
+.cols > div > :first-child { margin-top: 0; }
+.cols > div { min-width: 0; max-width: 64ch; }
+p { margin: 0 0 8px; }
+ul { margin: 0; padding-left: 1.2em; }
+li { margin-bottom: 4px; }
+li::marker { color: var(--red); }
+.lead { font-size: 1.3rem; line-height: 1.45; font-weight: 600; }
+.prices { margin: 0; }
+.prices div { display: flex; justify-content: space-between; gap: 20px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.prices dd { margin: 0; white-space: nowrap; color: var(--red); font-size: 1.3rem; }
+.prices small { display: block; font-size: .9rem; }
+iframe { border: 0; max-width: 100%; }
+
+footer { background: var(--ink); color: #fff; }
+footer a { color: #fff; font-weight: 600; }
+
+@media (max-width: 640px) {
+  .cols { grid-template-columns: 1fr; }
+  .logo { width: 80px; }
+  nav { flex-direction: column; align-items: flex-end; gap: 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
