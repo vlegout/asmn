@@ -16,7 +16,8 @@ nav a:hover { color: var(--red); text-decoration: underline; }
 h1 { margin: 0; font-size: clamp(1.6rem, 4vw, 2.5rem); line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
 
 .cols { display: grid; grid-template-columns: 1fr 2fr; gap: 8px 48px; padding-block: clamp(24px, 3vw, 36px); }
-section + section:not(#entrainements) .cols { border-top: 1px solid var(--line); }
+section + section .cols { border-top: 1px solid var(--line); }
+.hero + section .cols { border-top: 0; }
 h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.2; }
 h3 { margin: 20px 0 4px; font-size: 1.15rem; }
 .cols > div > :first-child { margin-top: 0; }
